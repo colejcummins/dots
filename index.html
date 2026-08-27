@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Dots</title>
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f2ed">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141312">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dots">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+
+    <header class="top">
+      <h1 id="today-label">—</h1>
+      <button id="edit-toggle" class="ghost" aria-label="Edit habits">EDIT</button>
+    </header>
+
+    <section id="habit-list" aria-label="Today's habits"></section>
+
+    <form id="add-form" hidden autocomplete="off">
+      <input id="add-name" type="text" maxlength="24" placeholder="NEW HABIT" aria-label="Habit name">
+      <div id="swatches" role="radiogroup" aria-label="Habit color"></div>
+      <button type="submit" class="wide">
+        <svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M40 128h176M128 40v176"/></svg>
+        ADD
+      </button>
+    </form>
+
+    <section class="calendar" aria-label="Calendar">
+      <div class="cal-head">
+        <button id="cal-prev" class="ghost" aria-label="Previous month">
+          <svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="M160 208 80 128l80-80"/></svg>
+        </button>
+        <h2 id="cal-label">—</h2>
+        <button id="cal-next" class="ghost" aria-label="Next month">
+          <svg class="ph" viewBox="0 0 256 256" aria-hidden="true"><path d="m96 48 80 80-80 80"/></svg>
+        </button>
+      </div>
+      <div class="cal-dow" aria-hidden="true">
+        <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+      </div>
+      <div id="cal-grid" class="cal-grid"></div>
+      <div id="cal-summary" class="cal-summary"></div>
+    </section>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
