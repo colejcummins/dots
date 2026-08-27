@@ -7,7 +7,7 @@ build step — all state lives in `localStorage` on the device.
 - **EDIT** to add habits (name + one of six colors) or delete them
 - Calendar shows a dot per habit per day; the legend below shows
   `days done / days in month` for the viewed month
-- Light/dark follows the system theme
+- Permanent dark mode
 - Type: [iA Writer Mono S](https://github.com/iaolo/iA-Fonts) (SIL OFL,
   license bundled in `fonts/`); icons are Phosphor stroke glyphs, inlined
 

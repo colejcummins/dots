@@ -14,34 +14,20 @@
 
 /* ---------- theme ---------- */
 :root {
-  --bg: #f4f2ed;
-  --ink: #1c1b18;
-  --muted: #8a877e;
-  --line: #e2dfd6;
-  --press: #eceade;
+  color-scheme: dark;
 
-  --c-red: #c2503f;
-  --c-orange: #c97a2b;
-  --c-yellow: #b99a1f;
-  --c-green: #5f8747;
-  --c-blue: #40699f;
-  --c-purple: #7d5da3;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141312;
-    --ink: #e6e3da;
-    --muted: #75726a;
-    --line: #2a2926;
-    --press: #1d1c1a;
+  --bg: #141312;
+  --ink: #e6e3da;
+  --muted: #75726a;
+  --line: #2a2926;
+  --press: #1d1c1a;
 
-    --c-red: #d0685a;
-    --c-orange: #d38f4a;
-    --c-yellow: #c4a83d;
-    --c-green: #7ba05e;
-    --c-blue: #6a8cbd;
-    --c-purple: #9a7fc0;
-  }
+  --c-red: #d0685a;
+  --c-orange: #d38f4a;
+  --c-yellow: #c4a83d;
+  --c-green: #7ba05e;
+  --c-blue: #6a8cbd;
+  --c-purple: #9a7fc0;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

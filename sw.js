@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE = "dots-v1";
+const CACHE = "dots-v2";
 const ASSETS = [
   ".",
   "index.html",
